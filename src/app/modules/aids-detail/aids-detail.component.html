@@ -1,0 +1,9 @@
+<mat-card class="aid-detail" *ngIf="aid">
+    <mat-card-header>
+        <mat-card-title class="aid-name">{{aid?.name}}</mat-card-title>
+    </mat-card-header>
+    <img *ngIf="aid?.icon" mat-card-image [src]="'assets/logo/' + aid.icon" alt="Icone de {{aid?.name}}">
+    <mat-card-content>
+        <p class="aid-description">{{aid?.description}}</p>
+    </mat-card-content>
+</mat-card>

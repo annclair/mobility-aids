@@ -1,0 +1,46 @@
+{
+    "mobility_aids": [
+        {
+                "id": 1,
+                "name": "Appel à candidatures Bourse Eurorégionale Aquitaine-Euskadi",
+                "icon": "logo_na-horizontal_coul-v3-2.jpg",
+                "description": "Dans le cadre de sa collaboration stratégique avec la Communauté d’Université et Etablissements de Nouvelle-Aquitaine, le GECT Eurorégion Aquitaine-Euskadi-Navarre soutient la mobilité académique d’étudiants à travers un programme de bourses. Cette deuxième édition a pour objectif de financer en priorité la mobilité des étudiants basques vers les universités et établissements situés en Nouvelle-Aquitaine, durant l’année universitaire 2017-2018."
+        },
+        {
+                "id": 2,
+                "name": "L’aide régionale Aquitaine Cap Mobilité",
+                "icon": null,
+                "description": "La Région Aquitaine a une politique forte en faveur de l’enseignement supérieur et de la recherche, lui accordant une part considérable de son budget.Elle propose une aide à destination du public étudiant: Aquitaine Cap Mobilité, dont le budget annuel s’élève à 3, 670 millions d’euros pour l’année universitaire 2014-2015."
+        },
+        {
+                "id": 3,
+                "name": "La bourse à la mobilite du Ministère",
+                "icon": null,
+                "description": "Le Ministère de l’Enseignement supérieur et de la recherche propose des aides financières pour les étudiants. Retrouvez l’aide à la mobilité internationale du Ministère de l’Enseignement Supérieur et de la Recherche sur leur site."
+        },
+        {
+                "id": 4,
+                "name": "Erasmus : les bourses européennes",
+                "icon": "logo_euroregion_2017-2-b7736.jpg",
+                "description": "Le programme européen Erasmus vise la mobilité et la coopération à travers l’Europe. Les étudiants de l’enseignement supérieur peuvent effectuer une mobilité sous statut Erasmus et effectuer une demande de bourse, que ce soit pour une mobilité de type étude(formation) ou de stage. Tout étudiant inscrit dans un établissement d’enseignement supérieur ayant signé la charte universitaire Erasmus et partant en mobilité conventionnée Erasmus peut prétendre, dans la limite des fonds disponibles, à une bourse Erasmus stage ou étude."
+        },
+        {
+                "id": 5,
+                "name": "IdEx International",
+                "icon": null,
+                "description": "Le programme de bourses de mobilité IdEx s’inscrit dans le programme général des initiatives d’excellence. Renforcer la mobilité internationale des étudiants au sein de parcours encadrés est une priorité capitale de l’IdEx."
+        },
+        {
+                "id": 6,
+                "name": "Sac Ados",
+                "icon": "logo_sac_ados-bdf3a.jpg",
+                "description": "Le Conseil Régional propose le dispositif ' Sac Ados'. L’opération s’adresse aux jeunes aquitains âgés de 16 à 25 ans. Dans le cadre de sa politique sociale du Tourisme et en adéquation avec sa politique Jeunesse, le Conseil Régional propose le dispositif 'Sac Ados'. Cette opération s’adresse aux jeunes aquitains âgés de 16 à 25 ans, souhaitant réaliser un premier projet de vacances autonomes(en séjour individuel ou collectif) en France(pour les 16/ 22 ans) ou en Europe(pour les 18 / 25 ans). Seuls les jeunes accompagnés par l’une des structures partenaires en 2016 pourront candidater et bénéficier de l’aide financière individuelle de la Région soit 130 € sous forme de chèques vacances pour les départs France et 250€ sous forme de carte bancaire prépayée pour les départs en Europe.Les départs sont possibles tout au long de l’année, les auditions régionales sont programmables à la demande de la structure partenaire dès qu’un projet est complétement finalisé et inscrit en ligne sur le site jeunes.aquitaine.fr dans la rubrique « accès jeunes » puis « inscrivez vous ». Vous trouverez en ligne sur le site jeunes.aquitaine.fr dans l’onglet « sac ados » puis « présentation du dispositif » la liste des structures partenaires 2016."
+        },
+        {
+                "id": 7,
+                "name": "Aide départementale des Landes",
+                "icon": "landessignature-56a6d.jpg",
+                "description": "Le département des Landes a mis en place un dispositif d’aide à la mobilité pour les étudiants dont les parents ont leur domicile fiscal dans les Landes, afin d’aider les familles à subvenir aux frais universitaires de leurs enfants dans un pays de l’union européenne."
+        }
+    ]
+}

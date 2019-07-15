@@ -1,0 +1,13 @@
+<div *ngFor="let aid of mobilityAids">
+    <mat-card>
+        <mat-card-header>
+            <div mat-card-avatar [ngStyle]="{backgroundImage: 'url(assets/logo/' + aid.icon + ')'}"
+              class="aid-logo">
+            </div>
+            <mat-card-title class="aid-name">{{aid.name}}</mat-card-title>
+        </mat-card-header>
+        <div class="aid-detail-button">
+            <button mat-flat-button [routerLink]="['/aids', aid.id]">En savoir plus</button>
+        </div>
+    </mat-card>
+</div>
