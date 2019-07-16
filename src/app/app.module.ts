@@ -5,13 +5,15 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
 
 import { MatSidenavModule, MatIconModule, MatToolbarModule, MatListModule, MatButtonModule } from '@angular/material';
 
+import { environment } from '../environments/environment';
+
 import { AidsListModule } from './modules/aids-list/aids-list.module';
 import { AidsDetailModule } from './modules/aids-detail/aids-detail.module';
-import { ServiceWorkerModule } from '@angular/service-worker';
-import { environment } from '../environments/environment';
+import { AidsPresentationModule } from './modules/aids-presentation/aids-presentation.module';
 
 @NgModule({
   declarations: [
@@ -24,6 +26,7 @@ import { environment } from '../environments/environment';
     AppRoutingModule,
     AidsListModule,
     AidsDetailModule,
+    AidsPresentationModule,
     MatSidenavModule,
     MatIconModule,
     MatToolbarModule,

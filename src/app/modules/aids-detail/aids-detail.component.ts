@@ -23,7 +23,7 @@ export class AidsDetailComponent implements OnInit {
     this.route.paramMap.subscribe(params => {
       const aidId = Number(params.get('id'));
       if (!isNaN(aidId)) {
-        this.mobilityAidsService.getOne(aidId).subscribe(res => this.aid = res, () => this.router.navigate(['/aids-list']));
+        this.mobilityAidsService.getOne(aidId).subscribe(res => this.aid = res, () => this.router.navigate(['/aids']));
       } else {
         this.router.navigate(['/aids-list']);
       }

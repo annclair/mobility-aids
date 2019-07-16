@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MatCardModule } from '@angular/material';
+import { RouterModule } from '@angular/router';
+
+import { MatCardModule, MatButtonModule } from '@angular/material';
 
 import { AidsDetailComponent } from './aids-detail.component';
 
@@ -8,7 +10,9 @@ import { AidsDetailComponent } from './aids-detail.component';
   declarations: [ AidsDetailComponent ],
   imports: [
     CommonModule,
-    MatCardModule
+    RouterModule,
+    MatCardModule,
+    MatButtonModule
   ]
 })
 export class AidsDetailModule { }
