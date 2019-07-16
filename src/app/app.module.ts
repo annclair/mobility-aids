@@ -10,6 +10,8 @@ import { MatSidenavModule, MatIconModule, MatToolbarModule, MatListModule, MatBu
 
 import { AidsListModule } from './modules/aids-list/aids-list.module';
 import { AidsDetailModule } from './modules/aids-detail/aids-detail.module';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,8 @@ import { AidsDetailModule } from './modules/aids-detail/aids-detail.module';
     MatIconModule,
     MatToolbarModule,
     MatListModule,
-    MatButtonModule
+    MatButtonModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [],
   bootstrap: [AppComponent]
