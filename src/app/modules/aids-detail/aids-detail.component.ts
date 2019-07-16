@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 import { MobilityAids } from 'src/app/models/mobility-aids.model';
 import { MobilityAidsService } from 'src/app/services/mobility-aids.service';
@@ -15,6 +15,7 @@ export class AidsDetailComponent implements OnInit {
 
   constructor(
     private route: ActivatedRoute,
+    private router: Router,
     private mobilityAidsService: MobilityAidsService
   ) { }
 
@@ -22,7 +23,9 @@ export class AidsDetailComponent implements OnInit {
     this.route.paramMap.subscribe(params => {
       const aidId = Number(params.get('id'));
       if (!isNaN(aidId)) {
-        this.mobilityAidsService.getOne(aidId).subscribe(res => this.aid = res);
+        this.mobilityAidsService.getOne(aidId).subscribe(res => this.aid = res, () => this.router.navigate(['/aids-list']));
+      } else {
+        this.router.navigate(['/aids-list']);
       }
     });
   }

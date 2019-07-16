@@ -6,7 +6,8 @@ import { AidsDetailComponent } from './modules/aids-detail/aids-detail.component
 const routes: Routes = [
   { path: 'aids-list', component: AidsListComponent },
   { path: 'aids/:id', component: AidsDetailComponent },
-  // { path: '**', }
+  { path: '', redirectTo: '/aids-list', pathMatch: 'full' },
+  { path: '**', component: AidsListComponent}
 ];
 
 @NgModule({
