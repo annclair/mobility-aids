@@ -2,8 +2,26 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.0.
 
+## Prerequisite
+Angular requires Node.js version 10.9.0 or later.
+
+To check your version, run node -v in a terminal/console window.
+
+To get Node.js, go to `https://nodejs.org/en/`.
+
+## Install all dependecies
+git clone 
+cd mobility-aids
+Run `npm install`
+
+## Use PWA & Service worker
+
+Run `npm run db-server` to simulate back-end.
+Run `npm run start` to build and start the project. Navigate to `http://localhost:8080`. (try `http://localhost:8080/index.html` if it doesn't work)
+
 ## Development server
 
+Run `npm run db-server` to simulate back-end.
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Code scaffolding

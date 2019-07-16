@@ -3,11 +3,13 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "npm run build && npm run http-serveur",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "db-server": "json-server --watch db.json",
+    "http-server": "http-server ./dist/mobility-aids"
   },
   "private": true,
   "dependencies": {
@@ -23,6 +25,8 @@
     "@angular/pwa": "^0.801.1",
     "@angular/router": "~8.1.0",
     "@angular/service-worker": "~8.1.0",
+    "http-server": "^0.11.1",
+    "json-server": "^0.15.0",
     "rxjs": "~6.4.0",
     "tslib": "^1.9.0",
     "zone.js": "~0.9.1"
