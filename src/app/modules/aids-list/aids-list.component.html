@@ -1,7 +1,9 @@
 <div *ngFor="let aid of mobilityAids">
     <mat-card>
         <mat-card-header>
-            <div mat-card-avatar [ngStyle]="{backgroundImage: 'url(assets/logo/' + aid.icon + ')'}"
+            <div mat-card-avatar *ngIf="aid.icon === null" class="aid-logo">
+            </div>
+            <div mat-card-avatar *ngIf="aid.icon !== null" [ngStyle]="{backgroundImage: 'url(assets/logo/' + aid.icon + ')'}"
               class="aid-logo">
             </div>
             <mat-card-title class="aid-name">{{aid.name}}</mat-card-title>

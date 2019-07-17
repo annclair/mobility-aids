@@ -14,6 +14,7 @@ import { environment } from '../environments/environment';
 import { AidsListModule } from './modules/aids-list/aids-list.module';
 import { AidsDetailModule } from './modules/aids-detail/aids-detail.module';
 import { AidsPresentationModule } from './modules/aids-presentation/aids-presentation.module';
+import { ComponentsModule } from './components/components.module';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { AidsPresentationModule } from './modules/aids-presentation/aids-present
     AidsListModule,
     AidsDetailModule,
     AidsPresentationModule,
+    ComponentsModule,
     MatSidenavModule,
     MatIconModule,
     MatToolbarModule,

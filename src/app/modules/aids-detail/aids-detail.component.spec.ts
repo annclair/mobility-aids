@@ -3,7 +3,7 @@ import { RouterTestingModule } from '@angular/router/testing';
 import { ActivatedRoute } from '@angular/router';
 import { of } from 'rxjs';
 
-import { MatCardModule, MatButtonModule } from '@angular/material';
+import { MatCardModule, MatButtonModule, MatBottomSheet, MatSnackBarModule } from '@angular/material';
 
 import { MobilityAidsService } from 'src/app/services/mobility-aids.service';
 
@@ -15,13 +15,15 @@ class MockMobilityAidsService {
   }
 }
 
+class MockMatBottomSheet { }
+
 describe('AidsDetailComponent', () => {
   let component: AidsDetailComponent;
   let fixture: ComponentFixture<AidsDetailComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [ MatCardModule, MatButtonModule, RouterTestingModule ],
+      imports: [MatCardModule, MatButtonModule, RouterTestingModule, MatSnackBarModule ],
       declarations: [ AidsDetailComponent ],
       providers: [
         {
@@ -33,7 +35,8 @@ describe('AidsDetailComponent', () => {
             })
           }
         },
-        { provide: MobilityAidsService, useClass: MockMobilityAidsService }
+        { provide: MobilityAidsService, useClass: MockMobilityAidsService },
+        { provide: MatBottomSheet, useClass: MockMatBottomSheet }
       ]
     })
     .compileComponents();
